@@ -1,0 +1,597 @@
+/*===Global===*/
+*{ box-sizing:border-box; margin:0; padding:0; }
+html{ scroll-behavior:smooth; }
+body{ font-family:var(--primary-font); font-size:16px; line-height:1.2; font-weight:400; color:var(--black-color); background:#ffffde; background-repeat:no-repeat; background-size:cover; overflow-x:hidden; }
+html body h1{ font-size:86px; line-height:1.2; font-weight:700; color:var(--white-color); margin:0; }
+html body h2{ font-size:49px; line-height:1.2; font-weight:600; color:var(--primary-color); margin:0; }
+html body h3{ font-size:30px; line-height:1.2; font-weight:500; color:var(--primary-color); margin:0; }
+html body h4{ font-size:25px; line-height:1.2; font-weight:500; color:var(--primary-color); margin:0; }
+html body h5{ font-size:20px; line-height:1.2; font-weight:400; color:var(--secondary-color); margin:0; }
+html body h6{ font-size:16px; line-height:1.2; font-weight:400; color:var(--primary-color); margin:0; }
+html body p{ font-size:18px; line-height:1.7; font-weight:400; color:var(--black-color); margin:0; }
+html body ul{ list-style:none; margin:0; padding:0; }
+html body li{ margin:0; padding:0; }
+html body img{ width:100%; height:auto; }
+html body a{ text-decoration:none; display:inline-block; }
+.container-fluid{ margin:0; padding:0; }
+.aos-animated{ overflow:hidden; }
+
+:root {
+    /*-- Font --*/
+    --primary-font: "Inter", sans-serif;
+    --secondary-font:;
+    --trans: all 0.5s ease-in-out;
+    /*-- color --*/
+    --primary-color:#D40D45;
+    --secondary-color:#140606;
+    --white-color:#fff;
+    --black-color:#000;
+}
+
+@font-face {
+    font-family: 'Felix Titling';
+    src: url('../fonts/FelixTitlingMT.woff2') format('woff2'),
+        url('../fonts/FelixTitlingMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Footlight MT Pro';
+    src: url('../fonts/FootlightMTPro-Bold.woff2') format('woff2'),
+        url('../fonts/FootlightMTPro-Bold.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Footlight MT Pro';
+    src: url('../fonts/FootlightMTPro-BoldItalic.woff2') format('woff2'),
+        url('../fonts/FootlightMTPro-BoldItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Footlight MT Pro';
+    src: url('../fonts/FootlightMTPro-ExtraBold.woff2') format('woff2'),
+        url('../fonts/FootlightMTPro-ExtraBold.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Footlight MT Pro';
+    src: url('../fonts/FootlightMTPro-ExtraBoldIt.woff2') format('woff2'),
+        url('../fonts/FootlightMTPro-ExtraBoldIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Footlight MT Pro';
+    src: url('../fonts/FootlightMTPro-Italic.woff2') format('woff2'),
+        url('../fonts/FootlightMTPro-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Footlight MT Pro';
+    src: url('../fonts/FootlightMTPro-Light.woff2') format('woff2'),
+        url('../fonts/FootlightMTPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Footlight MT Pro';
+    src: url('../fonts/FootlightMTPro-LightItalic.woff2') format('woff2'),
+        url('../fonts/FootlightMTPro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Footlight MT Pro';
+    src: url('../fonts/FootlightMTPro-Regular.woff2') format('woff2'),
+        url('../fonts/FootlightMTPro-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+.title{ font-family: 'Felix Titling'; font-size:48px; line-height:1.6; letter-spacing:2px; font-weight:400; color:#FB1E00; text-transform:uppercase; text-align:center; }
+.sub-title{ font-family: 'Felix Titling'; font-size:32px; line-height:1.2; letter-spacing:2px; font-weight:400; color:#140606; text-transform:uppercase; }
+
+.heading{ position:relative; padding:85px 0 35px; margin-bottom:60px; }
+.heading:before{ position:absolute; top:0; left:50%;  transform:translateX(-50%); background:url(../images/Home_page/Vector.png) no-repeat; width:55px; height:62px; background-size:100% 100%; content:""; }
+.heading:after{ position:absolute; bottom:0; left:50%;  transform:translateX(-50%); background:url(../images/Home_page/Converted.png) no-repeat; width:400px; height:22px; background-size:100% 100%; content:""; }
+.custom-btn{ font-size: 18px; line-height:1.2; font-weight: 500; color:var(--white-color); background-image: linear-gradient(35deg, #d40d45 0%, #fb1e01  51%, #d40d45  100%);  background-size: 200% auto; border-radius:50px; padding: 17.5px 46.5px; transition:var(--trans); }
+.custom-btn:hover { color:var(--white-color); background-position: right center; }
+
+/*Top_button Start*/
+#top_button{ display:inline-block; background-color:var(--primary-color); width:40px; height:40px; font-size:22px; line-height:40px; text-align:center; border-radius:4px; color:var(--white-color); position:fixed; bottom:30px; right:30px; opacity:0; visibility:hidden; transition:var(--trans); visibility:hidden; z-index:99; }
+#top_button:hover{ cursor:pointer; background-color:var(--black-color); box-shadow:0 0 5px 0 rgba(0,0,0,0.5); }
+#top_button.show { opacity:1; visibility:visible; }
+
+@media screen and (min-width:1366px){
+    .container{ max-width:1560px; }
+}
+
+/**********************************************************************************************
+
+                                    HEADER START                                                                       
+
+***********************************************************************************************/
+
+/* Header Start*/
+.navbar-default{ position:relative; z-index:999; background:var(--white-color); position:relative; padding:0; }
+.navbar-default .top-header{ width:100%; }
+.navbar-default .top-header .lf-side { display: flex; align-items: center; }
+.navbar-default .top-header .logo-panel{ width:273px; height:auto; transition:var(--trans); }
+.navbar-default .top-header .logo-panel a{ display:block; }
+.navbar-default .header-contact{ width:72%; padding-left:70px; }
+.navbar-default .header-contact .box{ display:flex; align-items: center; }
+.navbar-default .header-contact .box .icon-block{ width:45px; height:45px; border:1px solid var(--primary-color); border-radius:50%; display:flex; align-items:center; justify-content:center; }
+.navbar-default .header-contact .box .icon-block img{ max-width:23px; }
+.navbar-default .header-contact .text-panel{ width:80%; padding-left:10px; }
+.navbar-default .header-contact .text-panel h3{ font-size:14px; font-weight:600; padding-bottom:9px; }
+.navbar-default .header-contact .text-panel a{ font-size:16px; line-height:1.2; font-weight:500; color:var(--secondary-color); transition: var(--trans); }
+.navbar-default .header-contact .text-panel a:hover{ color:var(--primary-color); }
+.navbar-default .top-header .social-media ul { display: flex; align-items: center; }
+.navbar-default .top-header .social-media ul li:last-child{ padding-left:22px; } 
+.navbar-default .top-header .social-media ul a{ font-size:26px; color:var(--primary-color); transition:var(--trans); }
+.navbar-default .top-header .social-media ul a:hover{ color:var(--secondary-color); }
+.navbar-default .btm-header{ width:100%; background:var(--primary-color); transition:var(--trans); }
+.navbar-default .btm-header .logo-panel{ display:none; }
+.nav-links > ul { display: flex; justify-content: center; align-items: center; }
+.nav-link { position: relative; }
+.nav-link > a { position: relative; font-size: 16px; line-height: 1.2; font-weight: 400; color: var(--white-color); text-transform: capitalize; transition: var(--trans); padding: 18.5px; border-radius: 50px; text-transform:uppercase; }
+.nav-link > a.active,
+.nav-link:hover > a {  background:#FB1E00; }
+.nav-link > a i { font-size: 12px; margin-left: 10px; }
+.dropdown { position: absolute; top: 100%; left: 0; width: 15rem; transform: translateY(10px); opacity: 0; pointer-events: none; transition: .5s; background:var(--white-color); border-radius:0 0 5px 5px; overflow:hidden; }
+.dropdown ul { position: relative; }
+.nav-link > .fa-plus{ display:none; }
+.dropdown-link > a { display: flex; color: var(--primary-color); padding: .6rem 1rem; font-size: 16px; align-items: center; justify-content: space-between; transition: .3s; text-align:left; }
+.dropdown-link.active > a,
+.dropdown-link:hover > a { background-color: var(--primary-color); color: var(--white-color); }
+.dropdown-link i { transform: rotate(-90deg); }
+.dropdown-link { position: relative; }
+.dropdown.second { top: 0; left: 100%; cursor: pointer; transform: translateX(10px); }
+.nav-link:hover > .dropdown,
+.dropdown-link:hover>.dropdown { transform: translate(0, 0); opacity: 1; pointer-events: auto; }
+.hamburger-menu-container { flex: 1; display: none; align-items: center; justify-content: flex-end; display:none; }
+.hamburger-menu { width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: flex-end; }
+.hamburger-menu div { width: 1.6rem; height: 3px; border-radius: 3px; background-color: var(--primary-color); position: relative; z-index: 1001; transition: .5s; }
+.hamburger-menu div:before,
+.hamburger-menu div:after { content: ''; position: absolute; width: inherit; height: inherit; background-color: var(--primary-color); border-radius: 3px; transition: .5s; }
+.hamburger-menu div:before { transform: translateY(-7px); }
+.hamburger-menu.current-active div:before{ transform:rotate(45deg) }
+.hamburger-menu.current-active div:after{ transform:rotate(-45deg) }
+.hamburger-menu.current-active div { background-color: transparent; }
+.hamburger-menu div:after { transform: translateY(7px); }
+.navbar-default.navbar-shrink .btm-header{ box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1); position:fixed; top:0; left:0; right:0; animation:slideDown 0.35s ease-out; backdrop-filter: saturate(180%) blur(20px); z-index:999; }
+.navbar-default.navbar-shrink .navigation ul li a{color:var(--primary-color); }
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+
+/**********************************************************************************************
+
+                                        HOME PAGE START                                                                       
+
+***********************************************************************************************/
+
+/*== Banner Start ==*/
+.banner{ position:relative; z-index:99; }
+.banner .owl-stage{ padding-bottom:120px; }
+@media screen and (max-width: 1600px){ .banner .owl-stage{ padding-bottom:90px; } }
+.banner .item { position:relative; transition: .4s ease all; }
+.banner .item .img-panel{ min-height:400px; opacity: .8; transition:var(--trans); }
+.banner .item .img-panel img{ min-height:400px; object-fit:cover; object-position:top center; }
+.banner .active{ z-index:9; }
+.banner .active .item .img-panel{ opacity:1; }
+.banner .active .item { opacity:1; transform: scale(1.2); box-shadow:0 0 20px 0 rgba(0,0,0,0.9); }
+.banner .text-desc{ position:absolute; bottom:30px; left:0; right:0; width:100%; opacity:0; visibility:hidden; transition:all 0.5s; }
+.banner .active .item .text-desc{ opacity:1; visibility:visible; }
+.banner .text-desc .text-panel{ text-align:center; }
+.banner .text-desc .icon-panel{ max-width:234px; margin:0 auto 20px; }
+.banner .text-desc .text-panel h3{ font-family:'Felix Titling'; position:relative; font-size: 40px; line-height: 1.1; font-weight: 400; color:var(--white-color); display:inline-block; }
+.banner .text-desc .text-panel h3:before{ position:absolute; top:50%; left:-50px; transform:translateY(-50%); background:url(../images/Home_page/Vector-white.png); background-repeat:no-repeat; background-size:100% 100%; width:20px; height:20px; content:""; }
+.banner .text-desc .text-panel h3:after{ position:absolute; top:50%; right:-50px; transform:translateY(-50%); background:url(../images/Home_page/Vector-white.png); background-repeat:no-repeat; background-size:100% 100%; width:20px; height:20px; content:""; }
+.banner .text-desc .text-panel h2{ font-family:'Felix Titling'; position:relative; font-size: 60px; line-height: 1; font-weight: 400; color:#FFBB00; }
+.banner .owl-dots{ display:flex; align-items:center; justify-content:center; text-align:center; }
+.banner .owl-dots button{ width:28px; height:28px; border:1px solid transparent; border-radius:50%; padding:10px; margin:0 5px; display:flex; align-items:center; justify-content:center; transition:var(--trans); transform:scale(.8); }
+.banner .owl-dots button span{ width:12px; height:12px; border-radius:50%; background:#D40D45; transition:var(--trans); display:block; }
+.banner .owl-dots button.active{ border-color:#D40D45; transform:scale(1); transition:transform 0.5s; } 
+.banner .owl-dots button.active span{ width:16px; height:16px; }
+
+/*== hiring-block Start ==*/
+.hiring-notice:after{ position: absolute; top:-445px; left:0; right:0; content:""; background:url(../images/Home_page/Mesa-de-trabajo-2.png); background-repeat:no-repeat; background-size:100% 100%; width:837px; height:837px; margin:0 auto; z-index:8; }
+.hiring-notice{ position:relative; background:url(../images/Home_page/congress-bg.jpg) no-repeat top center; background-size:cover; padding:70px 0 50px; margin:0; z-index:9; }
+.hiring-notice .hiring-desc{ position:relative; background:#A6EFFF; border-radius:15px; border:1px solid #080484; padding:35px 70px 40px 52px; z-index:99; }
+.hiring-title{ text-align:center; }
+.hiring-notice .hiring-title h2{ position:relative; font-size:24px; line-height:1.2; font-weight:700; text-transform:uppercase; color:var(--black-color); padding:0 0 10px; margin:0 0 42px; display:inline-block;border-bottom:1px solid var(--black-color); }
+.notice-items .notice-title h3{ position:relative; font-size:19px; line-height:1.4; font-weight:700; text-transform:capitalize; color:var(--black-color); display:block; padding-right:20px; }
+.notice-items .notice-title h3:after{ position:absolute; top:50%; right:0; transform:translateY(-50%); content:":";  }
+.hiring-notice .notice-items .row{  margin-bottom:30px; }
+.hiring-notice .notice-items .row:last-child{ margin-bottom:0; }
+.hiring-notice .hiring-desc p{ color:var(--black-color); }
+.notice-contact-box{ max-width:297px; min-height:64px; width:100%; background:#536a71; display:flex; align-items: center; padding:11px 18px; border-radius:50px; margin-top:15px; transition:var(--trans); }
+.notice-contact-box .icon-block{ max-width:50px; padding-right:18px; }
+.notice-contact-box .icon-block img{ transition:var(--trans); }
+.notice-contact-box .ctc-name{ font-size:16px; line-height:1.2; font-weight:400; text-transform:capitalize; color:var(--white-color); display:block; padding-bottom:6px;  }
+.notice-contact-box .ctc-number{ font-size:18px; line-height:1.2; font-weight:400; color:var(--white-color); display:block; }
+.notice-contact-box:hover{ background:var(--primary-color); }
+.cross-btn{ position:relative; text-align:right; margin:0 10px -60px 0; z-index:999; }
+.cross-btn button{ border:0; outline:0; background:none; transform:scale(1); transition:all 0.5s; }
+.cross-btn button:hover{ transform:scale(.7); }
+
+/*== Sacred Celebrations Start ==*/
+.sacred-celebrations{ background:url(../images/Home_page/congress-bg.jpg) no-repeat top center; background-size:cover; padding:4px 0 70px; margin:115px 0 0; }
+.sacred-celebrations .sacred-desc{ background:url(../images/Home_page/bgtexture_2.jpg) no-repeat center center; background-size:cover; border-radius:8px; border:1px solid #D40D45; padding:35px 25px 48px 25px; }
+.cltos-sub-title{ text-align:center; }
+.sacred-celebrations .celebrations-title{ background:url(../images/Home_page/texture_1.png) no-repeat center center; background-size:737px 166px; padding:77px 0 50px; text-align:center; display:flex; align-items:center; justify-content:center; margin-top:-122px; margin-bottom:35px; }
+.sacred-celebrations .celebrations-title h2{ font-family: 'Felix Titling';  position:relative; font-size:40px; line-height:1.2; font-weight:400; color:#fff; letter-spacing:1.5px; top:-25px; text-transform:uppercase; }
+.sacred-celebrations .cltos-sub-title h3{ position:relative; font-size:32px; line-height:1.2; font-weight:700; color:#FB1E00; text-transform:uppercase; padding:0 20px 25px; margin:0 0 40px; display:inline-block; }
+.sacred-celebrations .cltos-sub-title h3:after{ position:absolute; bottom:0; left:50%;  transform:translateX(-50%); background:url(../images/Home_page/line.png) no-repeat; width:100%; height:24px; background-size:100% 100%; content:""; }
+.slider-celebrations{ max-width:1060px; margin:0 auto; }
+.slider-celebrations .item{ padding:60px 0 30px; }
+.slider-celebrations .item .img-panel:after{ position:absolute; top:47%; left:50%;  transform:translate(-50%,-50%); background:url(../images/Home_page/FLYER.png) no-repeat; width:723px; height:650px; background-size:100% 100%; padding:0; content:"";  }
+.slider-celebrations .item .img-panel{ position:relative; width:683px; height:569px; margin:0 auto; }
+.slider-celebrations .item .img-panel img{ width:100%; height:100%; object-fit:contain; }
+.slider-celebrations .owl-nav{ position:absolute; top:50%; left:0; transform:translateY(-50%); display:flex; align-items:center; justify-content:space-between; width:100%; }
+.slider-celebrations .owl-nav button{ width:60px; height:60px; background-size:100% 100% !important;  border:0; outline:0; box-shadow:none; transition:var(--trans); }
+.slider-celebrations .owl-nav button.owl-prev{ background:url(../images/Home_page/left-arrow.png) no-repeat center center; }
+.slider-celebrations .owl-nav button.owl-next{ background:url(../images/Home_page/right-arrow.png) no-repeat center center; }
+.slider-celebrations .owl-nav button span{ display:none; }
+.slider-celebrations .owl-nav button:hover{ opacity:.6; }
+.sacred-desc .custom-btn{ display:inline-flex; margin-top:25px; border-radius:6px; animation:none !important; text-transform:uppercase;  font-weight:600; padding:16px 35px; }
+.sacred-desc .custom-btn img{ max-width:24px; margin-right:25px; }
+
+
+/*== Events Diary Start ==*/
+.events-diary{ position:relative; padding:30px 0 80px; }
+.events-diary:before{ position:absolute; bottom:230px; left:0; background:url(../images/Home_page/before-img-4.png) no-repeat; width:360px; height:710px; content:""; background-size:100% 100%; z-index:-9; }
+.events-diary:after{ position:absolute; bottom:230px; right:0; background:url(../images/Home_page/after-img-4.png) no-repeat; width:360px; height:710px; content:""; background-size:100% 100%; z-index:-9 }
+.events-diary .heading{ margin-bottom:45px; }
+.content-table { border-collapse: collapse; width:100%; border-radius:5px; overflow: hidden; }
+.content-table thead tr { background-color: #D40D45; color: #ffffff; text-align: left; font-weight: bold; border-right:1px solid #e97a7f; }
+.content-table td{ background:#ffe7b9; }
+.content-table th,
+.content-table td { font-size:20px; line-height:1.2; padding: 18px; text-align:center; color:#140606; font-weight:600; border:1px solid #e97a7f; }
+.content-table th{ color:var(--white-color); }
+.content-table tbody tr { border-bottom: 1px solid #D40D45; }
+.content-table .color1 td:nth-child(1){ background-color: #ffbb00; color:#140606; }
+.content-table td span{ color:#FB1E00; }
+.content-table .color1 td:nth-child(2),
+.content-table tbody .color2 td:nth-child(2) { background-color: #fb1e00; color:#fff; }
+.content-table .color3 td:nth-child(2){ background:#ffe7b9; }
+.content-table tbody{ border:1px solid #D40D45; }
+.content-table tbody tr:last-of-type { border-bottom: 1px solid #D40D45; }
+.content-table tbody tr.active-row {font-weight: bold;color: #009879; }
+
+
+/*== Daily Puja Start ==*/
+.daily-puja{ position:relative; padding:60px 0 20px; }
+.daily-puja.weekly{ background:#fff0c9; }
+.wck-puja{ position:relative; z-index:9; }
+.wck-puja:before{ position:absolute; bottom:180px; left:0; background:url(../images/Home_page/before-img-3.png) no-repeat; width:320px; height:520px; content:""; background-size:100% 100%; z-index:-9; }
+.wck-puja:after{ position:absolute; bottom:180px; right:0; background:url(../images/Home_page/after-img-3.png) no-repeat; width:320px; height:520px; content:""; background-size:100% 100%; z-index:-9; }
+.daily-puja-box{ position:relative; max-width:1250px; margin:0 auto; }
+.daily-puja.show-box:after{ opacity:1; visibility:visible; z-index:9; }
+.daily-puja-box .item{ position:relative; margin-bottom:50px; }
+.daily-puja .item.show-box{ position:relative; z-index:99; }
+.daily-puja .item .text-desc{ padding-bottom:20px;  }
+.daily-puja-box .item .img-panel{ background:#FFFFDE; width:260px; height:330px; border:2px solid #D40D45; overflow:hidden; border-radius:200px 200px 0 0; display:flex; align-items:center; justify-content:center; padding:9px; margin:0 auto; }
+.daily-puja-box .item:after{ position:absolute; top:-20px; left:50%;  transform:translateX(-50%); background:url(../images/Home_page/Vector.png) no-repeat; width:39px; height:44px; content:""; background-size:100% 100%; }
+.daily-puja-box .item .img-panel img{ border-radius:200px 200px 0 0; height:100%; object-fit:cover; object-position:top center; line-height:0; }
+.daily-puja-box .item .text-desc{ text-align:center; }
+.daily-puja-box .text-desc .icon-panel{ max-width:253px; margin:0 auto; padding-top:15px; }
+.daily-puja-box .text-desc .puja-title{ font-family: 'Footlight MT Pro'; font-size:25px; font-weight:400; text-transform:capitalize; color:#FB1E00; min-height:110px; display:block; padding:22px 0 28px; }
+.daily-puja-box .text-desc .puja-time{ font-size:18px; font-weight:700; text-transform:capitalize; color:#000; display:block; padding:0 0 25px; }
+.daily-puja-box .text-desc .custom-btn{ position:relative; display:inline-flex; align-items:center; border-radius:6px; font-weight:600; padding:10px 20px; }
+.daily-puja-box .text-desc .custom-btn img{ max-width:27.41px; margin-right:8px; }
+.daily-puja-box .show-box a{ animation:bounce-2 1.4s infinite; }
+@keyframes bounce-2 {
+    0%{ box-shadow:0 0 0 0 rgb(251,30,1); }
+    100% { box-shadow:0 0 0 11px rgba(251,30,1,0); }
+  }
+
+/*== Monthly Puja Start ==*/
+.monthly-puja{ padding-bottom:20px; }
+.monthly-puja .daily-desc{ background:url(../images/Home_page/monthly-puja-bg.png); background-repeat:no-repeat; background-size:100% 100%; padding:120px 0 50px; }
+
+/*== Prayers Blessings Start ==*/
+.PrayersBlessings{ position:relative; padding:110px 0 100px; }
+.PrayersBlessings:before{ position:absolute; top:-378px; left:0; background:url(../images/Home_page/before-img.png) no-repeat; width:300px; height:680px; content:""; background-size:100% 100%; z-index:-9; }
+.PrayersBlessings:after{ position:absolute; top:-378px; right:0; background:url(../images/Home_page/after-img.png) no-repeat; width:300px; height:680px; content:""; background-size:100% 100%; z-index:-9; }
+
+.PrayersBlessings .heading{ padding-top:60px; margin-bottom:10px; }
+.PrayersBlessings .daily-desc{ max-width:1300px; margin:0 auto; }
+.PrayersBlessings .heading:before{ background-image: url(../images/Home_page/converted-after.png); width:381px; height:24px; }
+.PrayersBlessings .heading:after{ display:none; }
+.PrayersBlessings .btm-title{ font-family: 'Felix Titling'; font-size:28px; line-height:1.5; letter-spacing:8px; font-weight:400; color:hsl(0deg 54% 5% / 80%); text-transform:uppercase; }
+.PrayersBlessings .read-more{ padding-left:35px; padding-right:35px; text-transform:uppercase; margin-top: 50px; }
+
+/*== Together in Faith Start ==*/
+.together-in-faith{ background:url(../images/Home_page/CTA.png); background-repeat:no-repeat; background-size:cover; padding:70px 0; z-index:9; }
+.together-in-faith:before,
+.together-in-faith:after{ display:none; }
+.together-in-faith .heading:before{ background-image: url(../images/Home_page/converted-after-white.png); }
+.together-in-faith .title{ color:var(--white-color); }
+.together-in-faith .PrayersBlessings-desc p{ color:var(--white-color); } 
+.together-in-faith .heading{ padding-top: 50px; margin-bottom: 0; padding-bottom: 15px; }
+.together-in-faith .donate-btn{ background:#FFBB00; border:1px solid var(--white-color); color:#140606; font-weight:700; margin-top:35px;  }
+.together-in-faith .donate-btn:hover{ background:transparent; color:var(--white-color); }
+
+/*== View Our Divine Deities Start ==*/
+.divine-deities{ padding:0 !important; }
+.divine-deities-inner{ position:relative; padding:80px 0 100px; }
+.divine-deities-inner:before{ position:absolute; top:0; left:0; background:url(../images/Home_page/before-img-after.png) no-repeat; width:290px; height:300px; content:""; background-size:100% 100%; }
+.divine-deities-inner:after{ position:absolute; top:0; right:0; left:inherit; background:url(../images/Home_page/before-img-2.png) no-repeat; width:290px; height:300px; content:""; background-size:100% 100%; visibility: visible; opacity: 1; }
+.divine-deities .heading{ margin-bottom:50px; }
+.divine-deities .heding-desc{ padding-bottom:60px; }
+.divine-deities .item .icon-panel{ max-width:265px; margin:0 auto 10px; }
+.divine-deities .item .img-panel{ height:350px; border-radius:0; border:4px solid #D40D45; }
+.divine-deities .item .img-panel img{ border-radius:21px; }
+.divine-deities .register-button{ padding-top:0; margin-top:-35px; }
+.divine-deities .item:after{ display:none; }
+
+/*== Partners Slider Start ==*/
+.our-partners{ padding:90px 0; }
+.our-partners .heading{ margin-bottom:50px; }
+.our-partners .daily-desc{ padding:30px 0 250px; background:url(../images/Home_page/OUR-PARTNER.png); background-repeat:no-repeat; background-size:100% 100%; }
+.partners-slider .item img{ max-width:330px; margin:0 auto; }
+.partners-slider .owl-stage { display: flex; align-items: center; }
+
+
+
+/*== Stay Connected Block Start ==*/
+.stay-connected-block{ background:url(../images/Home_page/YOUTUBE-bg.png); background-repeat:no-repeat; background-size:cover; background-position:center right; padding:70px 0; }
+.stay-connected-block .heading{ padding-top: 50px; margin-bottom: 0; padding-bottom: 15px; }
+.stay-connected-block .right-side .heading:before{ background:url(../images/Home_page/Vector-white.png); background-repeat:no-repeat; left:0; transform:none;width:50px; height:57px; background-size:100% 100%; }
+.stay-connected-block .right-side .title{ text-align:left; color:var(--white-color); margin-top:20px; }
+.stay-connected-block .right-side .heading:after{ display:none; }
+.stay-connected-block .right-side p{ color:var(--white-color); font-weight:400; } 
+.stay-connected-block .youtube-video{ background:url(../images/Home_page/youtube-video-border-design.png); background-repeat:no-repeat; background-size: 100% 100%; height:400px; width:100%; padding: 4px 55px; overflow: hidden; }
+.stay-connected-block .youtube-video .img-panel img{ height: 100%; }
+.stay-connected-block .click-here { display: inline-flex; align-items: center; border-radius: 6px; font-weight: 600; padding: 10px 20px; margin-top:30px; }
+.stay-connected-block .click-here:hover{ background:var(--white-color); color:var(--primary-color); }
+.click-here img{ max-width:23px; margin-right:10px; }
+.youtube-video{ position:relative; }
+.stay-connected-block .youtube-video .img-panel{ height:100%; }
+.youtube-video .play-icon{ position: absolute; top:50%; left: 50%; transform:translate(-50%,-50%); }
+.youtube-video .play-icon .custom-btn{ background:none; }
+.youtube-video .play-icon .custom-btn:hover{ transform:scale(.9); }
+
+/*== Reach Out Start ==*/
+.reach-out-contact{ display:flex; align-items: center; justify-content:center; }
+.reach-out-contact .notice-contact-box{ max-width:inherit; width:inherit; background:var(--white-color); min-height:57px; margin:40px 5px 0; }
+.reach-out-contact .notice-contact-box .ctc-number{ font-size:18px; color:#140606; transition:var(--trans); }
+.reach-out-contact .notice-contact-box:hover{ background:var(--primary-color); }
+.reach-out-contact .notice-contact-box:hover .ctc-number{ color:var(--white-color); }
+.reach-out-contact .notice-contact-box:hover img{ filter: brightness(0) saturate(100%) invert(99%) sepia(5%) saturate(619%) hue-rotate(252deg) brightness(119%) contrast(100%); }
+
+
+/*== Testimonial Start ==*/
+.testimonial{ position:relative; padding:80px 0 85px; }
+.testimonial:before{ position:absolute; top:-300px; left:0; background:url(../images/Home_page/before-img.png) no-repeat; width:300px; height:680px; content:""; background-size:100% 100%; }
+.testimonial:after{ position:absolute; top:-300px; right:0; background:url(../images/Home_page/after-img.png) no-repeat; width:300px; height:680px; content:""; background-size:100% 100%; }
+.testimonial .heading{ margin-bottom:30px; }
+.testimonial .testimonial-desc { text-align:center; }
+.testimonial .testimonial-desc p{ padding-bottom:60px; }
+.testimonial .testimonial-desc h3{ font-size:18px; font-weight:700; text-transform:uppercase; color:#FFA500; padding-bottom:10px; }
+.testimonial .testimonial-desc .profession{ font-size:16px; font-weight:500; text-transform:capitalize; color:var(--black-color); }
+
+/**********************************************************************************************
+
+                                    ABOUT PAGE START                                                                       
+
+***********************************************************************************************/
+.Devotion{ position:relative; padding:60px 0 90px; }
+.Devotion:after{ position: absolute; top:51%; left:50%; transform:translate(-50%,-50%); content:""; background:url(../images/Home_page/Mesa-de-trabajo-2.png); background-repeat:no-repeat; background-size:100% 100%; width:700px; height:680px; margin:0 auto; z-index:8; }
+.Devotion .heding-desc p{ padding-bottom:35px; }
+.Devotion .desc-owner h3{ font-size:20px; color:#FB1E00; font-weight:700; padding-bottom:3px; }
+.Devotion .desc-owner p{ font-style:italic; }
+.Devotion .middle-block { position:relative; max-width:1200px; margin:0 auto 80px; }
+.Devotion .middle-block:before{ position:absolute; top:50%; left:-225px; transform:translateY(-50%); background:url(../images/About/about/kalka2.png) no-repeat; width:366px; height:357px; content:""; background-size:100% 100%; z-index:-9; }
+.Devotion .middle-block:after{ position:absolute; top:50%; right:-225px; transform:translateY(-50%); background:url(../images/About/about/kalka1.png) no-repeat; width:366px; height:357px; content:""; background-size:100% 100%; z-index:-9; }
+.Devotion .middle-block .img-panel{ max-width:930px; height:368px; margin:0 auto; }
+.Devotion .middle-block .img-panel img{ height:100%; object-fit:cover; width:100%; }
+.awakening:after{ top:72%; }
+
+/*===breath-of-life===*/
+.breath-of-life{ padding:60px 0; }
+.breath-of-life-slider { max-width:1280px; margin:60px auto 0; }
+.breath-of-life-slider .item{ position: relative; }
+.breath-of-life-slider .item .img-panel{ width:100%; border-radius:8px; height:450px; overflow:hidden; }
+.breath-of-life-slider .item .img-panel img{ height:100%; object-fit:cover; object-position: top center; }
+.breath-of-life-slider .owl-nav{ position:absolute; top:50%; left:0; transform:translateY(-50%); display:flex; align-items:center; justify-content:space-between; width:100%; }
+.breath-of-life-slider .owl-nav button{ position:relative; width:60px; height:60px; background-size:100% 100% !important;  border:0; outline:0; box-shadow:none; transition:var(--trans); }
+.breath-of-life-slider .owl-nav button.owl-prev{ left:-30px; background:url(../images/Home_page/left-arrow.png) no-repeat center center; }
+.breath-of-life-slider .owl-nav button.owl-next{ right:-30px; background:url(../images/Home_page/right-arrow.png) no-repeat center center; }
+.breath-of-life-slider .owl-nav button span{ display:none; }
+.breath-of-life-slider .owl-nav button:hover{ opacity:.6; }
+.breath-of-life-slider .owl-dots{ display:flex; align-items:center; justify-content:center; text-align:center; padding-top:35px; }
+.breath-of-life-slider .owl-dots button{ width:28px; height:28px; border:1px solid transparent; border-radius:50%; padding:10px; margin:0 5px; display:flex; align-items:center; justify-content:center; transition:var(--trans); transform:scale(.8); }
+.breath-of-life-slider .owl-dots button span{ width:12px; height:12px; border-radius:50%; background:#D40D45; transition:var(--trans); display:block; }
+.breath-of-life-slider .owl-dots button.active{ border-color:#D40D45; transform:scale(1); transition:transform 0.5s; } 
+.breath-of-life-slider .owl-dots button.active span{ width:16px; height:16px; }
+
+/*===OmicronFears===*/
+.OmicronFears .top-panel{ padding-bottom:40px; }
+.OmicronFears .top-panel .subtitle{ padding-top:30px; font-style:italic; }
+.OmicronFears .heding-desc p{ padding-bottom:25px; }
+.OmicronFears .form-list li{ margin:20px 0; padding:30px; }
+.gallery{ padding:42px 0 0; }
+.gallery .row .img-panel{ width:100%; height:200px; border-radius:8px; overflow:hidden; margin-bottom:18px; }
+.gallery .row .img-panel img{ height:100%; object-fit:cover; object-position:top center; }
+.gallery .view-btn{ position:relative; margin:35px 0 100px; z-index:9; }
+.gallery .view-btn:before{ position:absolute; top:50%; transform:translateY(-50%); left:0; width:41%; height:1px; background:#970830; content:""; z-index:-9; }
+.gallery .view-btn:after{ position:absolute; top:50%; transform:translateY(-50%); right:0; width:41%; height:1px; background:#970830; content:""; z-index:-9; }
+
+/*===ManagementCommittee===*/
+.ManagementCommittee{ padding:40px 0; }
+.ManagementCommittee .btm-item{ margin-bottom:45px; }
+.ManagementCommittee .btm-item .box-title { display: flex; align-items: center; justify-content: space-between; }
+.ManagementCommittee .btm-item .box-title .date{ padding:0; font-weight:700; }
+.ManagementCommittee .priests-list { padding-top: 35px; }
+@media screen and (min-width:991px)
+    { .ManagementCommittee .priests-list .col-xl-2 { width: 17.666667%; } 
+}
+.BoardTrustees .priests-list .box .img-panel { width: 150px; height: 200px; border-radius: 85px; }
+.BoardTrustees .priests-list .box .img-panel img{ width: 150px; height: 180px; border-radius: 70px; object-fit:cover; object-position:top center; }
+
+/*===StayConnected==*/
+.StayConnected{ padding-bottom:80px; }
+.StayConnected  .img-panel{ position:relative; height:950px; max-width:550px; margin:0 auto; }
+.StayConnected  .img-panel img{ height:100%; object-fit:cover; object-position:top center; }
+.StayConnected .right-side .heading{padding-top:0;  }
+.StayConnected .right-side .heading:before{ display:none; }
+.StayConnected .right-side .heading .title{ font-size:40px; text-align:left; }
+.StayConnected .right-side .heading:after { bottom: 0; left: 0; transform: none; }
+.StayConnected .stay-connected h4{ font-size:18px; color:#FB1E00; font-weight:700; padding-bottom:30px; }
+.StayConnected .stay-connected p{font-size:18px; padding-bottom:25px; }
+.StayConnected .StayConnected-list{ padding-bottom:25px; padding-left:15px; }
+.StayConnected .StayConnected-list li { font-size: 18px; line-height: 1.2; font-weight: 400; color: var(--black-color); margin:12px; list-style:disc; }
+.StayConnected .btm-panel p{ padding-bottom:5px; }
+.StayConnected .btm-panel h4{ font-size:18px; color:#FB1E00; font-weight:700; padding-bottom:30px; }
+
+.StayConnected  .img-panel:before{ position:absolute; top:50%; left:-445px; transform:translateY(-50%); background:url(../images/About/about/kalka2.png) no-repeat; width:600px; height:600px; content:""; background-size:100% 100%; z-index:-9; }
+.StayConnected  .img-panel:after{ position:absolute; top:50%; right:-445px; transform:translateY(-50%); background:url(../images/About/about/kalka1.png) no-repeat; width:600px; height:600px; content:""; background-size:100% 100%; z-index:-9; }
+
+/**********************************************************************************************
+
+                                    SERVICES PAGE START                                                                       
+
+***********************************************************************************************/
+.inner-banner{ background:url(../images/Inner-banner/Banner.png); background-repeat:no-repeat; background-size:cover; background-position:top center; padding:135px 0; }
+.inner-banner .inner-banner-desc{ text-align:center; }
+.inner-banner .inner-page-title { font-family: 'Felix Titling'; position: relative; font-size: 60px; line-height: 1; font-weight: 400; color: var(--white-color); }
+.inner-banner .breadcrumbs{ display:flex; align-items:center; justify-content:center; padding:30px 0 0; }
+.inner-banner .breadcrumbs li{ font-size: 15px; line-height: 1.2; text-transform:uppercase; font-weight: 400; color: #FB1E00; padding:0 5px; }
+.inner-banner .breadcrumbs li .dash{ color: var(--white-color); }
+.inner-banner .breadcrumbs li a{ color: var(--white-color); transition:var(--trans); }
+.inner-banner .breadcrumbs li a:hover{ color:#FB1E00; }
+
+
+/*==PujaEvent===*/
+.PujaEvent{ padding:50px 0 0; }
+.PujaEvent .heding-desc p{ margin-bottom:40px; }
+.PujaEvent .heding-desc p a{ color:var(--black-color); transition:var(--trans); }
+.PujaEvent .heding-desc p a:hover{ color:var(--primary-color); }
+.PujaEvent .event-list{ max-width:1228px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:center; padding:65px 0; }
+.PujaEvent .event-list li{ font-size: 18px; line-height: 1.2; text-transform:capitalize; font-weight: 700; color: #140606; width:48%; margin-bottom:40px; background:url(../images/Services/Temple-Services/right-arrow.png); background-repeat:no-repeat; background-size:31px 17px; background-position:left center;  padding-left:60px; }
+
+/*==Samagri List===*/
+.SamagriList{ position:relative; padding:25px 0; }
+.samagri-list { max-width: 1120px; margin: 0 auto; }
+.SamagriList ul{ display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #D40D45; padding-bottom:22px; margin-bottom:22px; }
+.SamagriList li{ font-size: 20px; line-height: 1.2; text-transform:capitalize; font-weight: 700; color: #140606; }
+.SamagriList li a.custom-btn{ display:inline-flex; margin-top:25px; border-radius:6px; animation:none !important; text-transform:uppercase;  font-weight:600; margin:0; padding:16px 35px; }
+.SamagriList:before{ position:absolute; bottom:0; left:0; background:url(../images/Home_page/before-img.png) no-repeat; width:300px; height:680px; content:""; background-size:100% 100%; z-index:-9; }
+.SamagriList:after{ position:absolute; bottom:0; right:0; background:url(../images/Home_page/after-img.png) no-repeat; width:300px; height:680px; content:""; background-size:100% 100%; z-index:-9; }
+.SamagriList .heading{ padding-top:55px; }
+.SamagriList .heading:before{ position:absolute; top:0; left:50%;  transform:translateX(-50%); background:url(../images/Home_page/converted-after-2.png) no-repeat; width:288px; height:27px; background-size:100% 100%; content:""; }
+
+
+/*==ContactForm ===*/
+.ContactForm{ padding-top:70px; padding-bottom:20px; }
+.ContactForm .form-box{ border-radius:8px; padding:45px 45px 60px; border:1px solid #D40D45; margin-bottom:40px; }
+.ContactForm .form-box .top-panel{ text-align:center; }
+.ContactForm .form-box .top-panel .option-title{ background:#FB1E00; padding:18px 30px; font-size: 20px; line-height: 1.2; text-transform:capitalize; color:var(--white-color); font-weight: 700; border-radius:8px; display:inline-block; margin-bottom:40px; }
+.ContactForm .select-service .img-panel{ max-width:1146px; margin:45px auto; }
+
+/*Form-block Start*/
+.label { font-size: 18px; line-height: 1.2; text-transform:capitalize; font-weight: 700; color: #140606; margin-bottom: 12px; display:block; }
+.form-block form .form-control { font-size:16px; line-height:1.2; font-weight:500; background: none; border-color: rgba(205, 164, 94, 0.2); margin-bottom: 30px; color: rgba(20,6,6,.50); border:1px solid #D40D45; border-radius:8px; outline:0; padding:18px 25px; }
+.form-block form textarea.form-control { height: 100px; }
+.form-block form .form-control::placeholder { color: #140606; opacity:37%; }
+.form-block form .img-panel img{ max-width:100%; }
+.form-block .custom-btn{ border:0; padding-left:60px; padding-right:60px; text-transform:uppercase; }
+.form-list ul li{ position:relative; background:#FFE7B9; padding:25px 30px; border-radius:8px; margin-bottom:20px; border-left:8px solid #FB1E00; font-size:16px; line-height:1.2; font-weight:500; font-style: italic;  }
+.form-list ul li:before{ width:5px; height:5px; background:#000; content:""; border-radius:50%; position:absolute; top:50%; left:15px; transform:translateY(-50%); }
+.form-list p{ font-style:italic; padding-top:30px; }
+.form-block img{ max-width:257px; }
+
+/*==Seva List ===*/
+.seva-list .box{ padding-bottom:40px; }
+.seva-list .box h3{ display:inline-block; font-size:20px; text-transform:capitalize; background:#fb1e00; color:var(--white-color); border-radius:4px; font-weight:600; padding:15px 35px; }
+.seva-list .box-title{ position:relative; }
+.seva-list .box-title:after{ position:absolute; bottom:0; right:0; content:""; border-bottom:1px solid #970830; width:85%; }
+.seva-list p{ padding-top:35px; }
+.seva-list p a{ color:#000; }
+
+/*==Volunteering Blog==*/
+.volunteering-blog{ padding:60px 0; }
+.volunteering-blog .heading { margin-bottom: 35px; }
+.volunteering-blog  .form-block { max-width: 1024px; margin: 0 auto; }
+
+/*Priests Start*/
+.priests{ padding:50px 0 70px; }
+.priests-list{ padding-top:70px; }
+.priests-list .box { text-align:center;  margin-bottom:50px; }
+.priests-list .box .img-panel{ width:190px; height:190px; border-radius:50%; border:2px dotted #d40d458c; display:flex; align-items:center; justify-content:center; margin:0 auto; padding:8px; }
+.priests-list .box .img-panel img{ background:#F0F0F0; width:170px; height:170px; border-radius:50%; object-fit:contain; overflow:hidden; }
+.priests-list .box h3{ font-size:18px; font-weight:700; text-transform:capitalize; min-height:35px; margin-top:40px; color:#FB1E00; margin-bottom:10px; }
+.breck{ display:block; }
+
+/**********************************************************************************************
+
+                                        FOOTER START                                                                       
+
+***********************************************************************************************/
+
+/*==Modal===*/
+div#myModal2,
+div#myModal { background: rgba(0,0,0,0.8); }
+.modal-header{ justify-content:space-between; }
+button.close { padding: 10px; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--primary-color); color: var(--white-color); background: var(--primary-color); box-shadow: 0 0 5px 0 rgba(0,0,0,.3); transition:var(--trans);
+}
+button.close:hover{ background:var(--black-color); }
+div#myModal2 .modal-header { justify-content: flex-end; }
+
+/*==Footer===*/
+.footer{ background:url(../images/Home_page/FOOTER-BG.png); background-repeat:no-repeat; background-size:cover; background-position:top center; padding:100px 0 0; }
+.footer .footer-logo{ max-width:420px; }
+.footer .top-panel{ position:relative; padding-bottom:40px; margin-bottom:45px; }
+.footer .top-panel:after{ background:url(../images/Home_page/line-2.png); background-repeat:no-repeat; background-size: 100% 100%; height:13px; width:100%; content: ""; position:absolute; bottom:0; left:0; right:0; }
+.footer .top-panel p{ font-size:16px; line-height:2; color:var(--white-color); max-width:750px; }
+.footer .sub-heading h3 { font-size:18px; line-height:1.2; font-weight:800; color:#FB1E00; text-transform:capitalize; letter-spacing:1px; padding-bottom:35px; }
+.footer .lf-side{ width:100%; display:flex; flex-wrap:wrap; justify-content:space-between; }
+.footer .lf-side .box{ width:48%; }
+.footer .link ul{ display:flex; flex-wrap:wrap; }
+.footer .link ul li { width:48%; font-size:16px; line-height:1.2; font-weight:400; color:var(--white-color); padding-bottom: }
+.footer .link ul li a{ color:var(--white-color); transition:var(--trans); text-transform:capitalize; padding-bottom:28px; }
+.footer .link ul li a:hover{ color:#FB1E00; transform: translateX(8px); }
+.footer .timimg-inner-box{ display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:30px; }
+.footer .timimg-inner-box .timtimg-title { display:flex; align-items:center; justify-content:space-between; max-width:170px; width:100%; font-size:16px; line-height:1.2; font-weight:400; color:var(--white-color); padding-right:5px; }
+.footer .timtimg-list li { font-size:15px; line-height:1.2; font-weight:400; color:var(--white-color); padding-bottom:15px; }
+.footer .innerbox{ margin-bottom:40px; }
+.footer .innerbox .text-panel h3{ font-size:14px; font-weight:600; color:#FB1E00; padding-bottom:9px; }
+.footer .innerbox .text-panel a{ font-size:16px; line-height:1.2; font-weight:500; color:var(--white-color);  transition: var(--trans); }
+.footer .innerbox .text-panel a:hover{ color:var(--primary-color); }
+.footer .innerbox{ display:flex; align-items: center; }
+.footer .innerbox .icon-block{ width:45px; height:45px; border:1px solid var(--primary-color); border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:10px; }
+.footer .innerbox .follow-us-list{ display:flex; padding-left:30px; }
+.footer .innerbox .follow-us-list li{ padding-left:22px; }
+.footer .innerbox .follow-us-list li img{ transform:scale(1); transition:all 0.5s; }
+.footer .innerbox .follow-us-list li a:hover img{ transform:scale(.8); }
+.innerbox.follow-us { padding: 23px 0 0; }
+.innerbox.follow-us h3{ font-size:18px !important; padding:0 !important; color: var(--white-color) !important; }
+.footer .copy-right{ position:relative; text-align:center; padding:45px 0 35px; }
+.footer .copy-right p{ font-size:14px; color:var(--white-color); }
+.footer .copy-right:after{ background:url(../images/Home_page/line-2.png); background-repeat:no-repeat; background-size: 100% 100%; height:13px; width:100%; content: ""; position:absolute; top:0; left:0; right:0; }
