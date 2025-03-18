@@ -239,7 +239,7 @@ html body a{ text-decoration:none; display:inline-block; }
 .cross-btn button{ border:0; outline:0; background:none; transform:scale(1); transition:all 0.5s; }
 .cross-btn button:hover{ transform:scale(.7); }
 .hiring-notice .col-xl-3.col-lg-4.col-md-12.col-sm-12 { display: flex; align-items: center; }
-
+.hiring-notice .col-xl-3.col-lg-4.col-md-12.col-sm-12 .notice-title h3 { font-size:17px; }
 /*== Sacred Celebrations Start ==*/
 .sacred-celebrations{ background:url(../images/Home_page/congress-bg.jpg) no-repeat top center; background-size:cover; padding:4px 0 70px; margin:115px 0 0; }
 .sacred-celebrations .sacred-desc{ background:url(../images/Home_page/bgtexture_2.jpg) no-repeat center center; background-size:cover; border-radius:8px; border:1px solid #D40D45; padding:35px 25px 48px 25px;}
