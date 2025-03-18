@@ -1,0 +1,1380 @@
+@media screen and (max-width:1600px) {
+    .custom-btn {
+        font-size: 15px;
+        padding: 15.5px 35.5px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .footer .innerbox .text-panel a {
+        font-size: 14px;
+    }
+
+    .footer .link ul li {
+        font-size: 14px;
+    }
+
+    .footer .timimg-inner-box .timtimg-title {
+        font-size: 15px;
+    }
+
+    .footer .timtimg-list li {
+        font-size: 14px;
+    }
+
+    .innerbox.follow-us h3 {
+        font-size: 15px !important;
+    }
+
+    .daily-puja-box .text-desc .puja-title {
+        font-size: 20px;
+    }
+
+    .divine-deities-inner {
+        padding: 70px 0;
+    }
+
+    .banner .text-desc .text-panel h2 {
+        font-size: 45px;
+    }
+
+    .banner .text-desc .text-panel h3 {
+        font-size: 32px;
+    }
+
+    .sacred-celebrations .cltos-sub-title h3 {
+        font-size: 25px;
+    }
+
+    .sacred-celebrations .celebrations-title h2 {
+        font-size: 33px;
+    }
+
+    .inner-banner .inner-page-title {
+        font-size: 45px;
+    }
+
+    .content-table th,
+    .content-table td {
+        font-size: 17px;
+    }
+
+    .SamagriList li {
+        font-size: 18px;
+    }
+
+    .PujaEvent .event-list li {
+        font-size: 16px;
+    }
+
+    .seva-list .box h3 {
+        font-size: 18px;
+    }
+
+    .notice-contact-box .ctc-number {
+        font-size: 14px;
+    }
+
+    .hiring-notice .hiring-desc {
+        padding: 35px 25px 40px 25px;
+    }
+
+    .notice-contact-box .ctc-name {
+        font-size: 13px;
+    }
+
+    .footer .innerbox .text-panel {
+        width: 70%;
+    }
+
+    .footer .top-panel p {
+        padding-left: 20px;
+    }
+
+    .Devotion {
+        padding: 35px 0 60px;
+    }
+
+    .Devotion .middle-block {
+        max-width: 810px;
+        margin-bottom: 45px;
+    }
+
+    .Devotion .middle-block .img-panel {
+        max-width: 665px;
+    }
+
+    .StayConnected .img-panel:before {
+        left: -200px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .StayConnected .img-panel:after {
+        right: -200px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .StayConnected .right-side .heading {
+        margin-bottom: 20px;
+    }
+
+    .StayConnected .stay-connected h4 {
+        padding-bottom: 18px;
+    }
+
+    .StayConnected .right-side .heading .title {
+        font-size: 25px;
+    }
+
+    .StayConnected .stay-connected p {
+        font-size: 17px;
+    }
+
+    .StayConnected .StayConnected-list li {
+        font-size: 17px;
+    }
+
+    .priests-list .box p {
+        font-size: 15px;
+    }
+
+    .breath-of-life {
+        padding: 45px 0;
+    }
+
+    .navbar-default .header-contact {
+        padding-left: 30px;
+    }
+
+    .events-diary:after,
+    .events-diary:before {
+        bottom: 383px;
+        width: 200px;
+        height: 400px;
+    }
+
+    .wck-puja:after,
+    .wck-puja:before {
+        bottom: 220px;
+        width: 250px;
+        height: 400px;
+    }
+
+    .daily-puja-box .text-desc .puja-title {
+        min-height: auto;
+    }
+
+    .monthly-puja .daily-desc {
+        padding: 85px 0 20px;
+    }
+
+    .PrayersBlessings:after,
+    .PrayersBlessings:before {
+        width: 250px;
+        height: 550px;
+    }
+
+    .divine-deities-inner:before,
+    .divine-deities-inner:after {
+        width: 250px;
+        height: 250px;
+    }
+
+    .testimonial:after,
+    .testimonial:before {
+        top: -250px;
+        width: 250px;
+        height: 525px;
+    }
+
+    .daily-puja-box .item .img-panel {
+        width: 240px;
+        height: 295px;
+    }
+
+    .monthly-puja .heading {
+        padding: 20px 0 26px;
+    }
+
+    .monthly-puja .heading:before {
+        display: block;
+        width: 30px;
+        height: 30px;
+        top: -20px;
+    }
+
+    .SamagriList:after,
+    .SamagriList:before {
+        width: 250px;
+        height: 600px;
+    }
+
+}
+
+@media screen and (max-width:1199px) {
+    .navbar-default .header-contact {
+        padding-left: 25px;
+    }
+
+    .stay-connected-block {
+        position: relative;
+        z-index: 9;
+    }
+
+    .stay-connected-block:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        content: "";
+        width: 100%;
+        height: 100%;
+        z-index: -9;
+    }
+
+    .daily-puja.divine-deities .daily-puja-box a {
+        display: block;
+        width: 100%;
+    }
+
+    .daily-puja.divine-deities .daily-puja-box .register-button a {
+        display: inline-block;
+        width: inherit;
+    }
+
+    .navbar-default .top-header .logo-panel {
+        width: 220px;
+    }
+
+    .navbar-default .header-contact .box .icon-block {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar-default .header-contact .box .icon-block img {
+        max-width: 20px;
+    }
+
+    .navbar-default .header-contact .text-panel a {
+        font-size: 14px;
+    }
+
+    .navbar-default .header-contact .box .icon-block {
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar-default .header-contact .box .icon-block img {
+        max-width: 15px;
+    }
+
+    .navbar-default .header-contact .text-panel h3 {
+        font-size: 14px;
+        padding-bottom: 1px;
+    }
+
+    .navbar-default .top-header .social-media ul li:last-child {
+        padding-left: 10px;
+    }
+
+    .donate-button .custom-btn {
+        padding: 15.5px 20.5px;
+    }
+
+    .banner .text-desc .text-panel h2 {
+        font-size: 38px;
+    }
+
+    .banner .text-desc .text-panel h3 {
+        font-size: 28px;
+    }
+
+    .banner .owl-stage {
+        padding-bottom: 60px;
+    }
+
+    .hiring-notice {
+        padding: 50px 0 50px;
+    }
+
+    .hiring-notice .hiring-desc {
+        padding: 30px 40px 25px 40px;
+    }
+
+    html body p {
+        font-size: 16px;
+    }
+
+    .notice-items .notice-title h3 {
+        font-size: 18px;
+    }
+
+    .notice-contact-box .icon-block {
+        max-width: 40px;
+    }
+
+    .notice-contact-box .ctc-number {
+        font-size: 16px;
+    }
+
+    .notice-contact-box .ctc-name {
+        font-size: 15px;
+    }
+
+    .sacred-celebrations .cltos-sub-title h3 {
+        font-size: 22px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .content-table th,
+    .content-table td {
+        font-size: 15px;
+    }
+
+    .monthly-puja .daily-desc {
+        padding: 90px 0 15px;
+    }
+
+    .PrayersBlessings {
+        padding: 70px 0 60px;
+    }
+
+    .divine-deities .daily-puja-box .text-desc .puja-title {
+        min-height: auto;
+    }
+
+    .divine-deities .daily-puja-box .item {
+        margin-bottom: 10px;
+    }
+
+    .stay-connected-block .youtube-video {
+        padding: 4px 35px;
+    }
+
+    .our-partners {
+        padding: 50px 0;
+    }
+
+    .testimonial {
+        padding: 60px 0 50px;
+    }
+
+    .sacred-celebrations {
+        margin: 100px 0 0;
+    }
+
+    .stay-connected-block .youtube-video {
+        height: 320px;
+    }
+
+    .footer {
+        padding: 65px 0 0;
+    }
+
+    .footer .footer-logo {
+        max-width: 295px;
+    }
+
+    .footer .top-panel p {
+        font-size: 14px;
+        padding-left: 30px;
+    }
+
+    .footer .link ul li {
+        width: 100%;
+    }
+
+    .footer .timimg-inner-box {
+        margin-bottom: 15px;
+        flex-direction: column;
+    }
+
+    .footer .timimg-inner-box .timtimg-title {
+        padding-bottom: 20px;
+    }
+
+    .timtimg-title span {
+        display: none;
+    }
+
+    .Devotion .middle-block:after,
+    .Devotion .middle-block:before {
+        display: none;
+    }
+
+    .Devotion .middle-block .img-panel {
+        max-width: 100%;
+    }
+
+    .Devotion .middle-block {
+        max-width: 100%;
+    }
+
+    .StayConnected {
+        padding-bottom: 35px;
+    }
+
+    .inner-banner {
+        padding: 80px 0;
+    }
+
+    .ManagementCommittee .priests-list .col-xl-2 {
+        width: 24.666667%;
+    }
+
+    .SamagriList:after,
+    .SamagriList:before {
+        opacity: .4;
+    }
+
+    .PujaEvent {
+        padding: 20px 0 0;
+    }
+
+    .PujaEvent .event-list li {
+        font-size: 15px;
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+
+    .PujaEvent .heding-desc p {
+        margin-bottom: 25px;
+    }
+
+    .priests {
+        padding: 50px 0 30px;
+    }
+
+    .daily-puja-box .item .img-panel {
+        width: 250px;
+        height: 320px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    html body p {
+        font-size: 16px;
+    }
+
+    .header-contact {
+        display: none;
+    }
+
+    .banner .text-desc .text-panel h2 {
+        font-size: 38px;
+    }
+
+    .banner .text-desc .text-panel h3 {
+        font-size: 25px;
+    }
+
+    .banner .item .img-panel img {
+        min-height: 350px;
+    }
+
+    .banner .item .img-panel {
+        min-height: 350px;
+    }
+
+
+
+    .hiring-notice .hiring-title h2 {
+        font-size: 20px;
+    }
+
+    .notice-items .notice-title h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+
+    .cross-btn button {
+        max-width: 40px;
+    }
+
+    .cross-btn {
+        margin: 0 10px -48px 0;
+    }
+
+    .sacred-celebrations .cltos-sub-title h3:after {
+        height: 12px;
+    }
+
+    .slider-celebrations .item .img-panel:after {
+        display: none;
+    }
+
+    .slider-celebrations .item {
+        padding: 0 0 30px;
+    }
+
+    .sacred-celebrations .celebrations-title {
+        background-size: 640px 130px;
+
+    }
+
+    .sacred-celebrations {
+        padding: 4px 0 35px;
+    }
+
+    .events-diary:after,
+    .events-diary:before {
+        width: 150px;
+        height: 300px;
+        opacity: .5;
+    }
+
+    .daily-puja {
+        padding: 35px 0 20px;
+    }
+
+    .events-diary {
+        padding: 15px 0 50px;
+    }
+
+    .wck-puja:before,
+    .wck-puja:after {
+        opacity: .4;
+    }
+
+    .monthly-puja .daily-desc {
+        background: none;
+        padding: 15px 0 15px;
+    }
+
+    .PrayersBlessings {
+        padding: 20px 0 60px;
+    }
+
+    .PrayersBlessings:before {
+        width: 200px;
+        height: 480px;
+    }
+
+    .daily-puja-box .text-desc .puja-time {
+        font-size: 15px;
+    }
+
+    .PrayersBlessings:after {
+        width: 200px;
+        height: 480px;
+    }
+
+    section.PrayersBlessings.together-in-faith {
+        padding-top: 55px;
+    }
+
+
+    .navbar.navbar-default .rt-side .col-xl-6.col-lg-6.col-md-12.col-12:nth-child(1) {
+        display: none;
+    }
+
+    .divine-deities-inner:after,
+    .divine-deities-inner:before {
+        width: 250px;
+        height: 250px;
+    }
+
+    .daily-puja-box .register-button a {
+        display: inline-block;
+        max-width: 250px;
+        margin: 25px auto 0;
+    }
+
+    .divine-deities-inner {
+        padding: 40px 0;
+    }
+
+    .stay-connected-block {
+        padding: 45px 0;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .stay-connected-block .youtube-video {
+        height: 250px;
+    }
+
+    .our-partners {
+        padding: 35px 0;
+    }
+
+    .our-partners .daily-desc {
+        padding: 30px 0 200px;
+    }
+
+    .sub-title {
+        font-size: 20px;
+    }
+
+    .partners a {
+        margin-bottom: 15px;
+    }
+
+    .reach-out-contact .notice-contact-box .ctc-number {
+        font-size: 16px;
+    }
+
+    .testimonial {
+        padding: 40px 0;
+    }
+
+    .testimonial:after,
+    .testimonial:before {
+        width: 200px;
+        height: 580px;
+    }
+
+    .testimonial .testimonial-desc p {
+        padding-bottom: 45px;
+    }
+
+    .footer .top-panel .box {
+        display: block !important;
+    }
+
+    .footer .top-panel p {
+        padding-left: 0;
+        padding-top: 30px;
+    }
+
+    .footer .innerbox .text-panel {
+        width: 70%;
+    }
+
+    .innerbox.follow-us {
+        margin-bottom: 25px;
+    }
+
+    .innerbox.follow-us h3 {
+        text-align: right;
+    }
+
+    .footer {
+        padding: 55px 0 0;
+    }
+
+    .stay-connected-block .right-side .heading:before {
+        width: 40px;
+        height: 45px;
+    }
+
+    .stay-connected-block .right-side .title {
+        margin-top: 10px;
+    }
+
+    .hiring-notice:after {
+        top: -400px;
+        width: 537px;
+        height: 537px;
+    }
+
+    #top_button {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        line-height: 30px;
+        bottom: 18px;
+        right: 18px;
+    }
+
+    .sacred-celebrations {
+        margin: 85px 0 0;
+    }
+
+    .StayConnected .img-panel:after,
+    .StayConnected .img-panel:before {
+        display: none;
+    }
+
+    .StayConnected .img-panel {
+        height: 700px;
+        max-width: 550px;
+        margin: 0 auto 35px;
+    }
+
+    .StayConnected .right-side {
+        text-align: center;
+    }
+
+    .StayConnected .right-side .heading .title {
+        text-align: center;
+    }
+
+    .StayConnected .right-side .heading:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .ManagementCommittee .priests-list .col-xl-2 {
+        width: 32.666667%;
+    }
+
+    .heading {
+        margin-bottom: 40px;
+    }
+
+    .gallery .view-btn {
+        margin: 35px 0 60px;
+    }
+
+    .ContactForm .form-box {
+        padding: 30px 30px 40px;
+        margin-bottom: 30px;
+    }
+
+    .seva-list .box h3 {
+        font-size: 16px;
+    }
+
+    section.PujaEvent.pb-5.mb-3 {
+        margin-bottom: 0 !important;
+    }
+
+    .navbar-default .btm-header .logo-panel {
+        display: block;
+        max-width: 200px;
+    }
+
+    .donate-group {
+        display: flex;
+        align-items: center;
+    }
+
+    .donate-button .custom-btn {
+        padding: 15.5px 45.5px;
+    }
+
+    .navbar-default .top-header {
+        padding: 8px 0;
+    }
+
+    .hamburger-menu-container {
+        display: flex;
+    }
+
+    .navbar-default.navbar-shrink .top-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        width: 100%;
+    }
+
+    .nav-btn {
+        position: fixed;
+        height: calc(100vh - 4rem);
+        top: 68px;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transform: translateX(100%);
+        transition: .65s;
+    }
+
+    .nav-btn.open_menu {
+        transform: translateX(0);
+    }
+
+    .nav-links {
+        flex: initial;
+        width: 100%;
+    }
+
+    .nav-links > ul {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        width: 100%;
+        opacity: 1;
+        transform: translateY(15px);
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .nav-link > a {
+        font-size: 18px;
+        line-height: 1;
+        padding: 1.5rem 2rem;
+        background: transparent !important;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-link > .fa-plus {
+        width: 45px;
+        height: 40px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--primary-color);
+        margin-right: 30px;
+        color: #fff;
+    }
+
+    .fa-plus.current-active:before {
+        content: "\f068";
+    }
+
+    .nav-link > a .fa-plus {
+        display: none;
+    }
+
+    .dropdown,
+    .dropdown.second {
+        position: initial;
+        top: initial;
+        left: initial;
+        transform: initial;
+        opacity: 1;
+        pointer-events: auto;
+        width: 100%;
+        padding: 0;
+        background-color: #000;
+        display: none;
+    }
+
+    .nav-link.current-active > .dropdown {
+        display: block;
+    }
+
+    .nav-link:hover > a > i,
+    .dropdown-link:hover > a > i {
+        transform: rotate(360deg);
+    }
+
+    .dropdown-link > a {
+        background-color: transparent;
+        color: var(--white-color);
+        padding: 1rem;
+        line-height: 1;
+    }
+
+    .dropdown.second .dropdown-link > a {
+        padding: 1.2rem 2rem 1.2rem 3rem;
+    }
+
+    .dropdown.second .dropdown.second .dropdown-link > a {
+        padding: 1.2rem 2rem 1.2rem 4rem;
+    }
+
+    .dropdown-link {
+        padding-left: 25px;
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+    }
+
+    .dropdown-link:last-child {
+        border: 0;
+    }
+    
+    .banner .item .img-panel {
+    height: 40vh;
+}
+}
+
+@media screen and (max-width:767px) {
+    .hiring-notice:after {
+        top: -200px;
+        width: 300px;
+        height: 250px;
+    }
+
+    .cross-btn button {
+        max-width: 30px;
+    }
+
+    .hiring-notice .hiring-title h2 {
+        font-size: 18px;
+        margin: 0 0 32px;
+    }
+
+    .hiring-notice .hiring-desc {
+        padding: 30px 20px 25px 20px;
+    }
+
+    .notice-contact-box {
+        max-width: 255px;
+    }
+
+    .sacred-celebrations {
+        margin: 70px 0 0;
+    }
+
+    .sacred-celebrations .celebrations-title h2 {
+        font-size: 21px;
+    }
+
+    .sacred-celebrations .celebrations-title {
+        background-size: 335px 92px;
+        margin-bottom: 0;
+    }
+
+    .sacred-celebrations .cltos-sub-title h3 {
+        font-size: 18px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sacred-celebrations .cltos-sub-title h3:after {
+        height: 5px;
+    }
+
+    .slider-celebrations .item .img-panel {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider-celebrations .owl-nav button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .sacred-desc .custom-btn {
+        margin: 0;
+    }
+
+    .sacred-celebrations .sacred-desc {
+        padding: 35px 15px 38px 15px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .heading:after {
+        width: 320px;
+        height: 15px;
+    }
+
+    .heading:before {
+        width: 45px;
+        height: 50px;
+    }
+
+    .heading {
+        padding: 70px 0 35px;
+    }
+
+    .content-table th,
+    .content-table td {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .daily-puja-box .text-desc .puja-title {
+        font-size: 28px;
+    }
+
+    .wck-puja:before,
+    .wck-puja:after {
+        bottom: 50%;
+        width: 150px;
+        height: 270px;
+    }
+
+    .PrayersBlessings:after,
+    .PrayersBlessings:before {
+        width: 170px;
+        height: 430px;
+    }
+
+    .PrayersBlessings .btm-title {
+        font-size: 20px;
+    }
+
+    .divine-deities-inner:after,
+    .divine-deities-inner:before {
+        width: 155px;
+        height: 160px;
+    }
+
+    .daily-puja.divine-deities .daily-puja-box a {
+        display: block;
+        width: 100%;
+    }
+
+    .divine-deities .heding-desc {
+        padding-bottom: 40px;
+    }
+
+    section.PrayersBlessings.together-in-faith {
+        padding: 40px 0;
+    }
+
+    .PrayersBlessings .heading:before {
+        width: 325px;
+    }
+
+    .divine-deities-inner:after,
+    .divine-deities-inner:before {
+        opacity: .5;
+    }
+
+    .divine-deities .heading {
+        margin-bottom: 30px;
+    }
+
+    .daily-puja-box .item .text-desc {
+        padding-bottom: 5px;
+    }
+
+    .stay-connected-block .youtube-video {
+        margin-bottom: 30px;
+    }
+
+    .our-partners .daily-desc {
+        background: none;
+    }
+
+    .partners a {
+        display: block;
+        max-width: 90%;
+        margin: 0 auto 25px;
+    }
+
+    .our-partners .daily-desc {
+        padding: 30px 0 10px;
+    }
+
+    .reach-out-contact {
+        flex-direction: column;
+    }
+
+    .reach-out-contact .notice-contact-box {
+        margin: 20px 5px 0;
+    }
+
+    .testimonial:after,
+    .testimonial:before {
+        width: 150px;
+        height: 400px;
+        top: -200px;
+    }
+
+    html body p {
+        font-size: 15px;
+    }
+
+    .footer .top-panel:after {
+        background: #ffffff42;
+        height: 1px;
+        width: 100%;
+    }
+
+    .footer .sub-heading h3 {
+        font-size: 15px;
+        padding-bottom: 25px;
+    }
+
+    .footer .timtimg-list li {
+        font-size: 13px;
+    }
+
+    .footer .innerbox .text-panel {
+        width: inherit;
+    }
+
+    .footer .innerbox .follow-us-list li {
+        padding-left: 15px;
+    }
+
+    .footer .innerbox .icon-block {
+        width: 35px;
+        height: 35px;
+    }
+
+    .innerbox.follow-us {
+        padding-top: 0;
+    }
+
+    .footer .copy-right:after {
+        background: #ffffff42;
+        height: 1px;
+        width: 100%;
+    }
+
+    .footer .innerbox {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .footer .copy-right {
+        padding: 28px 0 28px;
+    }
+
+    .footer .copy-right p {
+        font-size: 13px;
+    }
+
+    .navbar-default .top-header {
+        padding: 8px 0;
+    }
+
+    .Devotion:after {
+        width: 320px;
+        height: 300px;
+    }
+
+    .Devotion .middle-block {
+        margin-bottom: 28px;
+    }
+
+    .Devotion {
+        padding: 35px 0 28px;
+    }
+
+    .Devotion .heding-desc p {
+        padding-bottom: 10px;
+    }
+
+    .StayConnected .StayConnected-list li {
+        font-size: 15px;
+    }
+
+    .StayConnected .stay-connected p {
+        font-size: 15px;
+    }
+
+    .inner-banner .inner-page-title {
+        font-size: 25px;
+        line-height: 1.3;
+    }
+
+    .inner-banner .breadcrumbs {
+        padding: 20px 0 0;
+    }
+
+    .inner-banner .breadcrumbs li {
+        font-size: 14px;
+    }
+
+    .Devotion .heading {
+        margin-bottom: 35px;
+    }
+
+    .ManagementCommittee .priests-list .col-xl-2 {
+        width: 100%;
+    }
+
+    .ManagementCommittee .btm-item .box-title .date {
+        font-size: 12px;
+    }
+
+    .seva-list .box h3 {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .ManagementCommittee .priests-list {
+        padding-top: 5px;
+    }
+
+    .ManagementCommittee {
+        padding: 40px 0 0;
+    }
+
+    .priests-list .col-xl-2.col-lg-3.col-md-6.col-6:last-child .box {
+        margin-bottom: 25px;
+    }
+
+    .breath-of-life-slider .item .img-panel {
+        height: 350px;
+    }
+
+    .breath-of-life-slider .owl-nav button.owl-prev {
+        left: 0;
+
+    }
+
+    .breath-of-life-slider .owl-nav button.owl-next {
+        right: 0;
+    }
+
+    .breath-of-life-slider .owl-dots button {
+        width: 20px;
+        height: 20px;
+    }
+
+    .breath-of-life-slider .owl-dots button.active span {
+        width: 12px;
+        height: 12px;
+    }
+
+    img.mt-5.pt-3 {
+        margin-top: 12px !important;
+    }
+
+    .gallery .view-btn {
+        margin: 25px 0 50px;
+        z-index: 9;
+    }
+
+    .SamagriList li a.custom-btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    .SamagriList li:first-child {
+        width: 50%;
+        font-size: 15px;
+    }
+
+    .SamagriList {
+        padding: 25px 0 0;
+    }
+
+    .PujaEvent .event-list li {
+        width: 100%;
+    }
+
+    .PujaEvent .event-list {
+        padding: 10px 0;
+    }
+
+    .ContactForm .form-box {
+        padding: 30px 22px 30px;
+    }
+
+    .form-list ul li {
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .label {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .volunteering-blog {
+        padding: 30px 0 40px;
+    }
+
+    .priests-list {
+        padding-top: 45px;
+    }
+
+    .priests-list .box .img-panel {
+        width: 160px;
+        height: 160px;
+    }
+
+    .priests-list .box .img-panel img {
+        width: 135px;
+        height: 135px;
+    }
+
+    .priests-list .box h3 {
+        font-size: 15px;
+        min-height: auto;
+        margin-top: 25px;
+    }
+
+    .priests {
+        padding: 35px 0 0;
+    }
+
+    .accent-btn.text-center.mt-4 {
+        margin-top: 0 !important;
+    }
+
+    .PujaEvent.pb-5.mb-3 .heading {
+        margin-bottom: 5px;
+    }
+
+    .PujaEvent {
+        padding: 30px 0 0;
+    }
+
+    .donate-button .custom-btn {
+        padding: 13.5px 24.5px;
+        font-size: 14px;
+    }
+
+    .banner .text-desc .text-panel h2 {
+        font-size: 22px;
+    }
+
+    .banner .text-desc .text-panel h3 {
+        font-size: 16px;
+    }
+
+    .banner .item .img-panel,
+    .banner .item .img-panel img {
+        min-height: 200px;
+    }
+
+    .banner .text-desc .text-panel h3:before {
+        left: -32px;
+    }
+
+    .banner .text-desc .text-panel h3:after {
+        right: -32px;
+    }
+
+    .banner .text-desc .icon-panel {
+        max-width: 175px;
+        margin: 0 auto 15px;
+    }
+
+    .banner .owl-dots button.active span {
+        width: 12px;
+        height: 12px;
+    }
+
+    .banner .owl-dots button {
+        width: 22px;
+        height: 22px;
+
+    }
+
+    .modal-title {
+        font-size: 20px;
+    }
+
+    .banner .item .img-panel {
+        height: auto;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .notice-contact-box .icon-block {
+        display: none;
+    }
+
+    .sacred-celebrations .celebrations-title {
+        background-size: 300px 92px;
+        margin-bottom: 0;
+    }
+
+    .sacred-celebrations .celebrations-title h2 {
+        font-size: 18px;
+    }
+
+    .nav-link > a {
+        width: 75%;
+    }
+}
