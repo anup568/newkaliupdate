@@ -38,7 +38,7 @@ jQuery(document).ready(function () {
             1024: {
                 stagePadding: 200
             },
-            
+
             1320: {
                 stagePadding: 300
             },
@@ -170,6 +170,13 @@ jQuery(document).ready(function () {
             }
         }
     });
+});
+
+
+//Accordion Js
+jQuery(".daily-puja-box .text-desc a").hover(function () {
+    jQuery(this).closest(".daily-puja-box .item").toggleClass("show-box");
+    jQuery(this).closest(".daily-puja").toggleClass("show-box");
 });
 
 //Top_button Js
