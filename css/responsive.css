@@ -478,11 +478,11 @@
     }
 
     .banner .item .img-panel img {
-        min-height: 350px;
+        min-height: 300px;
     }
 
     .banner .item .img-panel {
-        min-height: 350px;
+        min-height: 300px;
     }
 
 
@@ -890,10 +890,10 @@
     .dropdown-link:last-child {
         border: 0;
     }
-    
+
     .banner .item .img-panel {
-    height: 40vh;
-}
+        height: 40vh;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -1357,6 +1357,10 @@
 
     .banner .item .img-panel {
         height: auto;
+    }
+
+    .samagri-list {
+        padding-top: 25px;
     }
 }
 
