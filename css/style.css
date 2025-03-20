@@ -266,7 +266,7 @@ html body a{ text-decoration:none; display:inline-block; }
 /*== Events Diary Start ==*/
 .events-diary{ position:relative; padding:30px 0 80px; }
 .events-diary:before{ position:absolute; bottom:347px; left:0; background:url(../images/Home_page/before-img-4.png) no-repeat; width:235px; height:500px; content:""; background-size:100% 100%; z-index:-9; }
-.events-diary:after{ position:absolute; bottom:230px; right:0; background:url(../images/Home_page/after-img-4.png) no-repeat; width:360px; height:710px; content:""; background-size:100% 100%; z-index:-9 }
+.events-diary:after{ position:absolute; bottom:347px; right:0; background:url(../images/Home_page/after-img-4.png) no-repeat; width:235px; height:500px; content:""; background-size:100% 100%; z-index:-9 }
 .events-diary .heading{ margin-bottom:45px; }
 .content-table { border-collapse: collapse; width:100%; border-radius:5px; overflow: hidden; }
 .content-table thead tr { background-color: #D40D45; color: #ffffff; text-align: left; font-weight: bold; border-right:1px solid #e97a7f; }
@@ -526,7 +526,20 @@ html body a{ text-decoration:none; display:inline-block; }
 .form-list ul li{ position:relative; background:#FFE7B9; padding:25px 30px; border-radius:8px; margin-bottom:20px; border-left:8px solid #FB1E00; font-size:16px; line-height:1.2; font-weight:500; font-style: italic;  }
 .form-list ul li:before{ width:5px; height:5px; background:#000; content:""; border-radius:50%; position:absolute; top:50%; left:15px; transform:translateY(-50%); }
 .form-list p{ font-style:italic; padding-top:30px; }
-.form-block img{ max-width:220px; margin-bottom:15px; }
+.form-block img{ max-width:225px; margin-bottom:15px; }
+.checkbox { max-width: 275px !important; }
+.fw-bold.mb-3,
+.fw-bold.mt-4{ font-size:17px; color:#140606; margin-bottom:20px !important; }
+p.small-text { margin-bottom: 20px; }
+.form-check-input { border: 1px solid #c00; width: 22px; height: 22px; cursor: pointer; background:transparent; padding:8px; }
+.form-check-input:checked { background-color: #c00; border-color: #c00; }
+.form-check-label { font-size: 17px; margin-left: 15px; }
+.form-check { display: flex; align-items: center; margin-bottom:20px; }
+.form-check-input[type=checkbox] { border-radius: 50%; width:18px; height:18px; }
+@media screen and (max-width:767px){
+    .form-check-label { font-size: 16px; line-height: 1.5; }
+    .form-check-input { width: 18px; height: 18px; }
+}
 
 /*==Seva List ===*/
 .seva-list .box{ padding-bottom:40px; }
