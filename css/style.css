@@ -451,7 +451,7 @@ html body a{ text-decoration:none; display:inline-block; }
 .ManagementCommittee .btm-item .box-title .date{ padding:0; font-weight:700; }
 .ManagementCommittee .priests-list { padding-top: 35px; }
 @media screen and (min-width:991px)
-    { .ManagementCommittee .priests-list .col-xl-2 { width: 17.666667%; } 
+    { .ManagementCommittee .priests-list .col-xl-2 { width: 20%; } 
 }
 .BoardTrustees .priests-list .box .img-panel { width: 150px; height: 200px; border-radius: 85px; }
 .BoardTrustees .priests-list .box .img-panel img{ width: 150px; height: 180px; border-radius: 70px; object-fit:cover; object-position:top center; }
