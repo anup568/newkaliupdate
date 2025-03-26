@@ -30,7 +30,7 @@ jQuery(document).ready(function () {
         autoplayHoverPause: true,
         responsive: {
             0: {
-                stagePadding: 40
+                stagePadding: 72
             },
             768: {
                 stagePadding: 120
