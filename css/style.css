@@ -199,7 +199,8 @@ html body a{ text-decoration:none; display:inline-block; }
 .banner .owl-stage{ padding-bottom:75px; }
 @media screen and (max-width: 1600px){ .banner .owl-stage{ padding-bottom:60px; } }
 .banner .item { position:relative; transition: .4s ease all; }
-.banner .item .img-panel{ height:40vh; opacity: .8; transition:var(--trans); }
+.banner .item .img-panel{ position:relative; height:40vh; opacity: .8; transition:var(--trans); }
+.banner .item .img-panel:after{ position:absolute; top:0; left:0; right:0; bottom:0; content:""; background: linear-gradient(#ffffff00 0%, rgba(0,0,0,0.5) 40%); }
 .banner .item .img-panel img{ height:100%; object-fit:cover; object-position:top center; }
 .banner .active{ z-index:9; }
 .banner .active .item .img-panel{ opacity:1; }
@@ -479,7 +480,7 @@ html body a{ text-decoration:none; display:inline-block; }
                                     SERVICES PAGE START                                                                       
 
 ***********************************************************************************************/
-.inner-banner{ background:url(../images/Inner-banner/Banner.png); background-repeat:no-repeat; background-size:cover; background-position:top center; padding:135px 0; }
+.inner-banner{ background:url(../images/Inner-banner/Banner.png); background-repeat:no-repeat; background-size:cover; background-position:top center; padding:70px 0; }
 .inner-banner .inner-banner-desc{ text-align:center; }
 .inner-banner .inner-page-title { font-family: 'Felix Titling'; position: relative; font-size: 60px; line-height: 1; font-weight: 400; color: var(--white-color); }
 .inner-banner .breadcrumbs{ display:flex; align-items:center; justify-content:center; padding:30px 0 0; }
@@ -511,6 +512,7 @@ html body a{ text-decoration:none; display:inline-block; }
 
 /*==ContactForm ===*/
 .ContactForm{ padding-top:70px; padding-bottom:20px; }
+.ContactForm-desc { max-width: 1024px; margin: 0 auto; }
 .ContactForm .form-box{ border-radius:8px; padding:45px 45px 60px; border:1px solid #D40D45; margin-bottom:40px; }
 .ContactForm .form-box .top-panel{ text-align:center; }
 .ContactForm .form-box .top-panel .option-title{ background:#FB1E00; padding:18px 30px; font-size: 20px; line-height: 1.2; text-transform:capitalize; color:var(--white-color); font-weight: 700; border-radius:8px; display:inline-block; margin-bottom:40px; }
@@ -518,8 +520,8 @@ html body a{ text-decoration:none; display:inline-block; }
 
 /*Form-block Start*/
 .label { font-size: 18px; line-height: 1.2; text-transform:capitalize; font-weight: 700; color: #140606; margin-bottom: 12px; display:block; }
-.form-block form .form-control { font-size:16px; line-height:1.2; font-weight:500; background: none; border-color: rgba(205, 164, 94, 0.2); margin-bottom: 30px; color: rgba(20,6,6,.50); border:1px solid #D40D45; border-radius:8px; outline:0; padding:18px 25px; }
-.form-block form textarea.form-control { height: 100px; }
+.form-block form .form-control { font-size:15px; line-height:1.2; font-weight:500; background: none; border-color: rgba(205, 164, 94, 0.2); margin-bottom: 25px; color: rgba(20,6,6,.50); border:1px solid #D40D45; border-radius:5px; outline:0; padding:12px 20px; }
+.form-block form textarea.form-control { height: 80px; }
 .form-block form .form-control::placeholder { color: #140606; opacity:37%; }
 .form-block form .img-panel img{ max-width:100%; }
 .form-block .custom-btn{ border:0; padding-left:60px; padding-right:60px; text-transform:uppercase; }
@@ -531,9 +533,9 @@ html body a{ text-decoration:none; display:inline-block; }
 .fw-bold.mb-3,
 .fw-bold.mt-4{ font-size:17px; color:#140606; margin-bottom:20px !important; }
 p.small-text { margin-bottom: 20px; }
-.form-check-input { border: 1px solid #c00; width: 22px; height: 22px; cursor: pointer; background:transparent; padding:8px; }
+.form-check-input { border: 1px solid #c00; width: 15px; height: 15px; cursor: pointer; background:transparent; padding:8px; }
 .form-check-input:checked { background-color: #c00; border-color: #c00; }
-.form-check-label { font-size: 17px; margin-left: 15px; }
+.form-check-label { font-size: 15px; margin-left: 15px; }
 .form-check { display: flex; align-items: center; margin-bottom:20px; }
 .form-check-input[type=checkbox] { border-radius: 50%; width:18px; height:18px; }
 @media screen and (max-width:767px){
