@@ -5,7 +5,7 @@
     }
 
     .title {
-        font-size: 38px;
+        font-size: 35px;
     }
 
     .footer .innerbox .text-panel a {
@@ -424,7 +424,7 @@
     }
 
     .inner-banner {
-        padding: 80px 0;
+        padding: 50px 0;
     }
 
     .ManagementCommittee .priests-list .col-xl-2 {
@@ -1315,24 +1315,28 @@
     }
 
     .banner .text-desc .text-panel h2 {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .banner .text-desc .text-panel h3 {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .banner .item .img-panel,
     .banner .item .img-panel img {
-        min-height: 200px;
+        min-height: 160px;
     }
 
     .banner .text-desc .text-panel h3:before {
-        left: -32px;
+        left: -22px;
+        width: 16px;
+        height: 16px;
     }
 
     .banner .text-desc .text-panel h3:after {
-        right: -32px;
+        right: -22px;
+        width: 16px;
+        height: 16px;
     }
 
     .banner .text-desc .icon-panel {
@@ -1343,6 +1347,10 @@
     .banner .owl-dots button.active span {
         width: 12px;
         height: 12px;
+    }
+
+    .banner .owl-stage {
+        padding-bottom: 40px;
     }
 
     .banner .owl-dots button {
