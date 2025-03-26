@@ -199,7 +199,7 @@ html body a{ text-decoration:none; display:inline-block; }
 .banner .owl-stage{ padding-bottom:75px; }
 @media screen and (max-width: 1600px){ .banner .owl-stage{ padding-bottom:60px; } }
 .banner .item { position:relative; transition: .4s ease all; }
-.banner .item .img-panel{ height:55vh; opacity: .8; transition:var(--trans); }
+.banner .item .img-panel{ height:40vh; opacity: .8; transition:var(--trans); }
 .banner .item .img-panel img{ height:100%; object-fit:cover; object-position:top center; }
 .banner .active{ z-index:9; }
 .banner .active .item .img-panel{ opacity:1; }
