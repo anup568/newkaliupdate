@@ -116,16 +116,19 @@ jQuery(document).ready(function () {
     })
 });
 
-//myModal
+//video-modal Js
 jQuery(document).ready(function () {
-    jQuery("#myModal").on('hidden.bs.modal', function (e) {
-        jQuery("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
+    jQuery('.modal').on('show.bs.modal', function (event) {
+        jQuery(this).find('iframe').attr("src", $(event.relatedTarget).data('url'));
     });
-});
-
-jQuery(document).ready(function () {
-    jQuery("#myModal2").on('hidden.bs.modal', function (e) {
-        jQuery("#myModal2 iframe").attr("src", $("#myModal2 iframe").attr("src"));
+    jQuery('.modal').on('hidden.bs.modal', function (e) {
+        jQuery(this).find('iframe').attr("src", "");
+    });
+    var videoSrc = $(".video-modal iframe").attr("src");
+    jQuery('.video-modal').on('show.bs.modal', function () {
+        jQuery(".video-modal iframe").attr("src", videoSrc + "?autoplay=1");
+    }).on('hidden.bs.modal', function (e) {
+        jQuery(".video-modal iframe").attr("src", null);
     });
 });
 
