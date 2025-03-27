@@ -475,8 +475,8 @@
                                         </div>
                                         <div class="text-panel">
                                             <h3 class="puja-title">Mangal Aarti</h3>
-                                            <h4 class="puja-time">00:00 ET</h4>
-                                            <a href="#myModal" class="custom-btn" data-bs-toggle="modal" data-bs-target="#myModal"> <img src="images/Home_page/online-streaming.png" alt="online-streaming" />VIEW LIVE STREAM</a>
+                                            <h4 class="puja-time">00:00 ET</h4>                                            
+                                            <a href="javascript:void(0)" class="custom-btn" data-url="https://www.youtube.com/embed/PFH04g9Mfrw?si=LpzR2gmSwyx-l5He" data-bs-toggle="modal" data-bs-target="#myModal"><img src="images/Home_page/online-streaming.png" alt="online-streaming" />VIEW LIVE STREAM</a>
                                         </div>
                                     </div>
                                 </div>
@@ -493,7 +493,7 @@
                                         <div class="text-panel">
                                             <h3 class="puja-title">Morning Puja</h3>
                                             <h4 class="puja-time">11:30 AM ET</h4>
-                                            <a href="#myModal" class="custom-btn" data-bs-toggle="modal" data-bs-target="#myModal"> <img src="images/Home_page/online-streaming.png" alt="online-streaming" />VIEW LIVE STREAM</a>
+<!--                                            <a href="#myModal" class="custom-btn" data-bs-toggle="modal" data-bs-target="#myModal"> <img src="images/Home_page/online-streaming.png" alt="online-streaming" />VIEW LIVE STREAM</a>-->
                                         </div>
                                     </div>
                                 </div>
@@ -572,6 +572,26 @@
             </div>
         </div>
     </section>
+    
+    <!--   modal Start-->
+    <div class="modal fade" tabindex="-1" id="myModal">
+        <div class="modal-dialog modal-dialog-centered video-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">LIVE STREAM</h4>
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="lgx-about-video">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--   modal End-->
 
     <!-- Monthly  Puja Start -->
     <section class="daily-puja monthly-puja">
@@ -977,36 +997,6 @@
         </div>
     </footer>
 
-    <!--   Modal Start-->
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">LIVE STREAM</h4>
-                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/W0HN9lMQUbM?si=lxgnNKXBJoI0ZS78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="myModal2" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/UVeE3DqrEpY?si=JtT-ZjIBdKKD2l7T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-        </div>
-    </div>
 
     <!-- Back to top button -->
     <a id="top_button"><i class="fa-solid fa-arrow-up"></i></a>
@@ -1017,6 +1007,4 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/glightbox.min.js"></script>
     <script src="js/custom.js"></script>
-</body>
-
-</html>
+</body></html>
