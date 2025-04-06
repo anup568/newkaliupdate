@@ -220,9 +220,21 @@
         padding-left: 25px;
     }
 
+    .sub-title-h {
+        font-size: 25px;
+    }
+
     .stay-connected-block {
         position: relative;
         z-index: 9;
+    }
+
+    .contact-page .innerbox .text-panel {
+        width: 80%;
+    }
+
+    .contact-page.pt-3.pb-3 {
+        padding: 0 0 20px !important;
     }
 
     .stay-connected-block:after {
@@ -903,6 +915,35 @@
         height: 250px;
     }
 
+    .contact-page .title {
+        font-size: 22px;
+    }
+
+    .contact-page .innerbox .follow-us-list {
+        padding-left: 0;
+    }
+
+    .inner-banner .inner-page-title.c-sub-title {
+        font-size: 21px;
+    }
+
+    .contact-page-form {
+        padding: 25px;
+        margin-top: 20px;
+    }
+
+    .c-w-page {
+        padding: 40px 0;
+    }
+
+    .contact-page .innerbox .text-panel a {
+        font-size: 16px;
+    }
+
+    .contact-page .innerbox.follow-us .text-panel {
+        width: inherit;
+    }
+
     .cross-btn button {
         max-width: 30px;
     }
@@ -910,6 +951,10 @@
     .hiring-notice .hiring-title h2 {
         font-size: 18px;
         margin: 0 0 32px;
+    }
+
+    .contact-page .innerbox.follow-us h3 {
+        text-align: left !important;
     }
 
     .hiring-notice .hiring-desc {
