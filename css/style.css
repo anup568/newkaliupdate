@@ -206,7 +206,7 @@ html body a{ text-decoration:none; display:inline-block; }
 .banner .owl-stage{ padding-bottom:75px; }
 @media screen and (max-width: 1600px){ .banner .owl-stage{ padding-bottom:60px; } }
 .banner .item { position:relative; transition: .4s ease all; }
-.banner .item .img-panel{ position:relative; height:40vh; opacity: .8; transition:var(--trans); }
+.banner .item .img-panel{ position:relative; height:30vh; opacity: .8; transition:var(--trans); }
 .banner .item .img-panel:after{ position:absolute; top:0; left:0; right:0; bottom:0; content:""; background: linear-gradient(#ffffff00 0%, rgba(0,0,0,0.5) 40%); }
 .banner .item .img-panel img{ height:100%; object-fit:cover; object-position:top center; }
 .banner .active{ z-index:9; }
@@ -487,9 +487,10 @@ html body a{ text-decoration:none; display:inline-block; }
                                     SERVICES PAGE START                                                                       
 
 ***********************************************************************************************/
+.inner-banner.contact-page{ padding:50px 0; }
 .inner-banner{ background:url(../images/Inner-banner/Banner.png); background-repeat:no-repeat; background-size:cover; background-position:top center; padding:70px 0; }
 .inner-banner .inner-banner-desc{ text-align:center; }
-.inner-banner .inner-page-title { font-family: 'Felix Titling'; position: relative; font-size: 60px; line-height: 1; font-weight: 400; color: var(--white-color); }
+.inner-banner .inner-page-title { font-family: 'Felix Titling'; position: relative; font-size: 50px; line-height: 1; font-weight: 400; color: var(--white-color); }
 .inner-banner .breadcrumbs{ display:flex; align-items:center; justify-content:center; padding:30px 0 0; }
 .inner-banner .breadcrumbs li{ font-size: 15px; line-height: 1.2; text-transform:uppercase; font-weight: 400; color: #FB1E00; padding:0 5px; }
 .inner-banner .breadcrumbs li .dash{ color: var(--white-color); }
@@ -568,6 +569,30 @@ p.small-text { margin-bottom: 20px; }
 .priests-list .box h3{ font-size:18px; font-weight:700; text-transform:capitalize; min-height:35px; margin-top:40px; color:#FB1E00; margin-bottom:10px; }
 .breck{ display:block; }
 
+
+/**********************************************************************************************
+
+                                    CONTACT PAGE START                                                                       
+
+***********************************************************************************************/
+.contact-page.inner-banner .inner-page-title{ font-size:30px; }
+.inner-banner .inner-page-title.c-sub-title{ font-size:35px; line-height:1.5; }
+.contact-page .innerbox{ margin-bottom:40px; }
+.contact-page .innerbox .text-panel h3{ font-size:18px !important; font-weight:600; color:#000 !important; padding-bottom:9px; }
+.contact-page .innerbox .text-panel a{ font-size:18px; line-height:1.2; font-weight:700; color:#140606; transition: var(--trans); }
+.contact-page .innerbox .text-panel a:hover{ color:var(--primary-color); }
+.contact-page .innerbox{ display:flex; align-items: center; }
+.contact-page .innerbox .icon-block{ width:45px; height:45px; border:1px solid #970830; border-radius:50%; display:flex; align-items:center;background:#970830; justify-content:center; margin-right:10px; color:#fff; font-size:20px; }
+.contact-page .innerbox .follow-us-list{ display:flex; padding-left:30px; }
+.contact-page .innerbox .follow-us-list li{ padding-left:22px; }
+.contact-page .innerbox .follow-us-list li img{ transform:scale(1); transition:all 0.5s; }
+.contact-page .innerbox .follow-us-list li a:hover img{ transform:scale(.8); }
+.line-img { margin-top:10px; margin-bottom: 30px; }
+.contact-page .title{ text-align:left; color:#140606; font-size:28px; }
+.sub-title-h{ font-size:35px; display:block; }
+.contact-page-form{ background:#FFF0D4; padding:35px; border-radius:18px; overflow:hidden; border-top:12px solid var(--primary-color); }
+.contact-page-form .custom-btn{ font-size:18px; padding:15px 30px; font-weight:600; }
+.contact-page .lf-side{ padding-right:30px; padding-top:20px; }
 /**********************************************************************************************
 
                                         FOOTER START                                                                       
