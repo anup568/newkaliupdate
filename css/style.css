@@ -710,3 +710,94 @@ div#myModal2 .modal-header { justify-content: flex-end; }
 .saibaba .middle-box p{ font-family: 'Felix Titling'; font-size:18px; padding-bottom:20px; color:#D40D45; }
 .gallery-event .row .img-panel{ height:300px; }
 
+
+/*Last-updated- 13-07-2025*/
+/*India Culture Center Page*/
+.StayConnected .stay-connected .list li{ list-style-type: disc; margin-left: 30px; }
+.StayConnected.Culture-Center .img-panel { height: 650px; }
+.Culture-Center .Contact-Jayasree.custom-btn { padding: 20px 45px; }
+.Culture-Center .priests-list-desc h2{ color: #140606; }
+.Culture-Center .priests-list-desc h3{ font-weight:700; color: #FB1E00; padding-bottom:10px; }
+.Culture-Center .priests-list-desc p{ padding-bottom:10px; }
+.RegistrationContacts.Culture-Center .row{ max-width:100%; }
+.contact-page-form.p-5.m-auto{ background:#FFE7B9; max-width:1000px; margin:0 auto; border:2px solid #D40D45; border-radius:5px; margin-bottom:50px !important; }
+
+.connection-spiritual{ padding:60px 0; }
+.connection-spiritual .connection-items .box{ text-align:center; }
+.connection-spiritual .connection-items .box .top-panel h3{ font-size:22px; line-height:1.2; font-weight:700; color:#fff; background:#D40D45; padding:22px; border-radius:5px 5px 0 0; }
+.connection-spiritual .connection-items .box .middle-box p{ color:#140606; background:#FFE7B9; height:250px; display:flex; align-items:center; justify-content:center; padding:60px 40px; }
+.connection-spiritual .connection-items .btm-panel a{ border-radius:5px; text-transform:uppercase; font-weight:700; }
+.SamagriList .form-box { border-radius: 8px; padding: 45px 45px 60px; border: 1px solid #D40D45; margin-bottom: 40px; max-width:1024px; margin:0 auto; border-radius:0 0 5px 5px; }
+.Volunteer-become h3{ font-family:"Inter", sans-serif; font-size:22px; max-width:1024px; background:#D40D45; padding:20px; border-radius:5px 5px 0 0; color:#fff !important; letter-spacing:0px; font-weight:600; margin:0 auto; }
+.Volunteer-become{ text-transform:capitalize !important; }
+.border-r{ border-radius:10px; }
+.SamagriList .form-block form .form-control { padding: 18px 20px; }
+.saibaba.kali-maa-mandir .item .img-panel{ width:90%; } 
+
+/*Last-updated- 13-07-2025*/
+@media screen and ( max-width:991px){
+    .kali-maa-mandir .middle-box .img-panel{
+        width:30%;
+        margin:20px auto;
+    }
+    
+    .inner-banner .inner-page-title {
+    font-size: 35px;
+}
+    
+    .kali-maa-mandir .d-flex.align-items-center.justify-content-center{
+        flex-wrap:wrap;
+    }
+    
+    .saibaba .middle-box p {
+        font-size: 14px;
+    }
+    
+    .connection-spiritual .connection-items .box {
+    margin-bottom: 30px;
+}
+    .SamagriList .form-box {
+    padding: 20px;
+}
+}
+/*Last-updated- 13-07-2025*/
+
+
+@media screen and ( max-width:767px){
+    .BanglaLanguage:before {
+        width: 150px;
+        height: 240px;
+        bottom: inherit;
+        top: -55px;
+    }
+    
+    .RegistrationContacts .col-md-7.col-sm-12:last-child .box-teacher {
+        padding-left: 20px;
+    }
+    
+    .RegistrationContacts .box-teacher .text-panel a {
+    font-size: 16px;
+}
+    .RegistrationContacts .box-teacher h3 {
+    font-size: 18px;
+}
+    .Contact-Jayasree.custom-btn {
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 20px;
+}
+    section.ContactForm.registration-form.pt-5 {
+    padding-bottom: 0;
+}
+    section.ContactForm.registration-form.pt-5 .form-box {
+    padding-bottom: 0;
+}
+    .inner-banner .breadcrumbs {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+        .priests .form-list {
+        width: 100%;
+    }
+}
+
