@@ -199,3 +199,31 @@ jQuery(document).ready(function () {
         }, '300');
     });
 });
+
+
+
+
+
+jQuery(document).ready(function () {
+    jQuery('.slider-Vendors').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: false,
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
+});
+
